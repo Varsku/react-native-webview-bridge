@@ -130,6 +130,7 @@ var WebViewBridge = createReactClass({
         onLoadingFinish={this.onLoadingFinish}
         onLoadingError={this.onLoadingError}
         onChange={this.onMessage}
+        originWhitelist= {["http://.*", "https://.*"]}
       />;
 
     return (
